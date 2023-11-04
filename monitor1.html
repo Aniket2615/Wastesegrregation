@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Monitor</title>
+      <link rel="stylesheet" type="text/css" href="monitor1.css">
+      <script src="monitor1.js"></script>
+
+</head>
+
+<body>
+      <h1>--- Waste Segregation Analysis --- </h1>
+
+      <p>You are real-time analyzing waste</p>
+
+
+      <div class="container">
+            <div class="first">
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2293265/widgets/740789"></iframe>
+                  <p>Reading At Wet Side of Dustbin </p>
+            </div>
+            <div class="first-sec">
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2293265/widgets/740796"></iframe>
+                  <p>Indicator</p>
+            </div>
+      </div>
+      <div class="second">
+            <div>
+                <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/2293265/widgets/740791"></iframe>
+
+                  <p>Gauge Reading at Wet side of Dustbin</p>
+            </div>
+            <div>
+                  <button class="button" onclick="openGraph()">Graphs</button>
+                  <p>Analysis Graphs</p>
+            </div>
+            
+      </div>
+</body>
